@@ -84,9 +84,27 @@ Route::get("integrated/about", function () {
 });
 
 
+
+
+
+/*START OF FORUMS TUTORIAL*/
+Route::get("integrated/articles/create" , "ArticlesController@create");
+Route::post("integrated/articles", "ArticlesController@store");
+Route::get("integrated/articles/{article}/edit", "ArticlesController@edit");
+Route::put("integrated/articles/{article}", "ArticlesController@update");
+
+
+
+
+
+
+
+
+
+
 /*Dynamic View USing Article Model*/
 
 Route::get("integrated/articles/{article}", "ArticlesController@show");
 
 /*Homework exercise for pagination on views*/
-Route::get("integrated/articles", "ArticlesController@showall");
+Route::get("integrated/articles", "ArticlesController@index");

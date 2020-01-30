@@ -13,6 +13,7 @@
          </div>
          <div class="container">
            @foreach ($articles as $article)
+           <h3>{{$article->title}}</h3>
             <p>{{ $article->excerpt }}</p>
            @endforeach
           </div>

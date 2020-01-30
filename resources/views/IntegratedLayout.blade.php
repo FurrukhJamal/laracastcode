@@ -29,6 +29,8 @@ Released   : 20140225
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 
+  @yield("bootstrap")
+
 </head>
 <body>
 	<div id="header" class="container">
